@@ -1,5 +1,5 @@
    
-			#####################    Request -1   #####################
+		#####################    Request -1   #####################
 		
 SELECT distinct market 
 FROM dim_customer
