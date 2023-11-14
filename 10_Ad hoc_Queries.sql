@@ -1,7 +1,7 @@
 /* This file will contains all the 10 Ad-Hoc Queries 
    which were performed to get the required result */
    
-					#####################    Request -1   #####################
+			#####################    Request -1   #####################
 		
 SELECT distinct market 
 FROM dim_customer
@@ -10,7 +10,7 @@ WHERE customer = 'Atliq Exclusive' AND region = 'APAC';
 
 
 
-						#####################    Request -2    #####################
+			#####################    Request -2    #####################
                         
 -- By using CTE and CASE statement       
 /* Here we are providing the condition for fiscal year from inside by using CASE statement */          
@@ -44,7 +44,7 @@ WHERE cte1.fiscal_year = 2020 AND cte2.fiscal_year = 2021;
 
 
 
-					#####################    Request -3    #####################
+			    #####################    Request -3    #####################
                     
 SELECT 
       segment, count(product_code) as product_count
@@ -55,7 +55,7 @@ SELECT
       
       
       
-                     #####################    Request -4    #####################
+                             #####################    Request -4    #####################
       
 WITH cte as(
 		SELECT 
@@ -76,7 +76,7 @@ SELECT segment, product_count_2020,  product_count_2021,
        
 							
                             
-					#####################    Request -5    #####################
+			    #####################    Request -5    #####################
      
 SELECT 
      fc.product_code, dp.product, manufacturing_cost
@@ -91,7 +91,7 @@ SELECT
        
        
        
-                #####################    Request -6   #####################
+                         #####################    Request -6   #####################
 
 SELECT 
      pid.customer_code, dc.customer, 
@@ -107,7 +107,7 @@ SELECT
       
 
       
-				#####################    Request -7   #####################
+			#####################    Request -7   #####################
      
 SELECT 
 		 CONCAT(MONTHNAME(fs.date),' ',YEAR(fs.date) ) as month, 
@@ -123,7 +123,7 @@ SELECT
       
       
       
-				  #####################    Request -8   #####################
+			#####################    Request -8   #####################
                   
 SELECT 
      CASE
